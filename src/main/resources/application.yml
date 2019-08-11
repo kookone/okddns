@@ -1,0 +1,27 @@
+server:
+  port: 9999
+  tomcat:
+    max-threads: 4
+
+spring:
+  application:
+    name: okddns
+  profiles:
+    active: local
+
+logging:
+  path: /tmp/okddns/log/${spring.application.name}-${server.port}
+  level:
+    root: INFO
+  levelorg:
+    springframework: INFO
+
+aliyun:
+  regionId: cn-hangzhou
+#替换自己的AccessKey
+  accessKeyId:
+  accessKeySecret:
+#替换自己的域名,多个使用','分开
+  update:
+    domains: example.domain.com
+
