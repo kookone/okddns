@@ -14,7 +14,13 @@
 # 条件
  先申请阿里云域名的AccessKey
  > https://usercenter.console.aliyun.com/#/manage/ak
- 
+
+# 获取公网IP
+本机公网ip通过IpUtil.java文件获取。
+通过：http://2019.ip138.com/ic.asp 获取后解析。
+如果该地址有变化，请及时更新。并修改解析方式
+
+
 # 配置
 配置文件路径: src/main/resources/application.yml
 
@@ -31,10 +37,5 @@
 1.SpringBoot启动： Run AliyunDomainApplication.java 
 
 2.Docker启动：docker build -t okddns:v1 . && docker run --name onekook-okddns okddns:v1 
-
-# 代码
-本机公网ip通过IpUtil.java文件获取。
-通过：http://2019.ip138.com/ic.asp 获取后解析。
-如果该地址有变化，请及时更新。并修改解析方式
 
  
